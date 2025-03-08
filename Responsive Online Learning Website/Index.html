@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website of Online Learning</title>
+
+    <!--=============== LOGO ===============-->
+    <link rel="stylesheet" href="IMG/Logo.png" />
+
+    <!--=============== STYLE CSS ===============-->
+    <link rel="stylesheet" href="CSS/Style.css" />
+
+    <!--=============== REMIX ICON LINK ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="" class="nav__logo">
+          <img src="IMG/W3school-logo.png" alt="" />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="Tutorial.html" class="nav__link">
+                Tutorial <i class="ri-arrow-down-s-fill"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="Excercise.html" class="nav__link">
+                Excercise <i class="ri-arrow-down-s-fill"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="Get-certificate.html" class="nav__link">
+                Get certificate <i class="ri-arrow-down-s-fill"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="Service.html" class="nav__link">
+                Service <i class="ri-arrow-down-s-fill"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <!--TOGGLE BUTTON-->
+        <div class="nav__toggle" id="nav-toggle">
+          Menu <i class="ri-arrow-down-s-fill"></i>
+        </div>
+        <!-- SPACES -->
+        <a href="https://www.w3schools.com/spaces/Index.php"
+          class="free__website">
+          Spaces
+        </a>
+        <!--SIG UP FROM BUTTON-->
+        <a href="https://www.w3schools.com/Signup/Index.php" class="nav__btn">
+          Signup
+        </a>
+        <!-- LOGIN FORM BUTTON -->
+        <a
+          href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com"
+          class="nav__button"
+        >
+          Login
+        </a>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="shape shape__big"></div>
+          <div class="shape shape__small"></div>
+          <div class="home__data">
+            <h1 class="home__title">Learn to Code</h1>
+            <h2 class="home__subtitle">
+              With the world's largest web developer site.
+            </h2>
+            <form class="example" action="PHP/Search.php" style="margin: auto; max-width: 300px">
+              <input type="text" placeholder="Search.." name="search2" />
+              <button type="submit">
+                <i class="ri-search-2-line"></i>
+              </button>
+            </form>
+            <a
+              href="https://www.w3schools.com/where_to_start.asp"
+              class="home__sub__subtitle">
+              Not Sure where to begin?
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICE SECTION ====================-->
+      <div class="service__container container grid">
+        <div class="service__data">
+          <h1 class="service__title">All Our Courses</h1>
+          <h2 class="service__subtitle">
+            W3Schools offers a wide range of courses and products for beginners
+            and professionals, helping millions of people everyday to learn and
+            master new skills.
+          </h2>
+        </div>
+        <div class="card__container">
+          <div class="card__item">
+            <div class="card__body">
+                <h1 class="card__title"> 
+                    HTML
+                </h1>
+                <p class="card__description">
+                    HTML provides is developed for beginners and professionals. 
+                </p>
+            </div>
+            <div class="card__body">
+                <h1 class="card__title">CSS</h1>
+                <p class="card__description">
+                    CSS tutorial is developed for beginners and professionals.
+                </p>
+            </div>
+            <div class="card__body">
+                <h1 class="card__title"> JAVASCRIPT </h1>
+                <p class="card__description">
+                    JavaScript is an object-based scripting language which is lightweight and cross-platform.
+                </p>
+            </div>
+            <div class="card__body">
+              <h1 class="card__title">BOOTSTRAP</h1>
+              <p class="card__description">
+                Bootstrap is the popular HTML, CSS and JavaScript framework for developing a responsive and mobile friendly website.
+              </p>
+            </div>
+            <div class="card__body">
+                <h1 class="card__title">PHP</h1>
+                <p class="card__description">
+                    PHP is a professionals provides in-depth knowledge of PHP scripting language. Our PHP tutorial will help you to learn PHP scripting language easily. 
+                </p>
+            </div>
+            <div class="card__body">
+                <h1 class="card__title">JAVA</h1>
+                <p class="card__description">
+                    Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language. 
+                </p>
+            </div>
+            <div class="card__body">
+                <h1 class="card__title">C++</h1>
+                <p class="card__description">
+                    C++ is an object-oriented programming language. It is an extension to C programming.
+                    Our C++ tutorial includes all topics of C++ such as first example, control statements, objects and classes, inheritance, constructor, destructor, this, static, polymorphism, abstraction, abstract class, interface, namespace, encapsulation, arrays, strings, exception handling, File IO, etc.    
+                </p>
+            </div>
+            <div class="card__body">
+                <h1 class="card__title">PYTHON</h1>
+                <p class="card__description">
+                    Python tutorial provides basic and advanced concepts of Python. Our Python tutorial is designed for beginners and professionals. Python is a simple, general purpose, high level, and object-oriented programming language. Python is an interpreted scripting language also. Guido Van Rossum is known as the founder of Python programming.
+                </p>
+            </div>
+            <div class="card__body">
+                <h1 class="card__title">SQL</h1>
+                <p class="card__description">
+                    SQL tutorial provides basic and advanced concepts of SQL. Our SQL tutorial is designed for both beginners and professionals. SQL (Structured Query Language) is used to perform operations on the records stored in the database, such as updating records, inserting records, deleting records, creating and modifying database tables, views, etc.
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--==================== SUB HOME SECTION ====================-->
+      <section class="sub__nested__home">
+        <div class="sub__nested__home__container container grid">
+          <div class="sub__nested__home__data">
+            <h1 class="sub__nested__title">Code Editor</h1>
+            <h2 class="sub__nested__subtitle">
+              With our online code editor, you can edit code and view the result
+              in your browser
+            </h2>
+            <img src="IMG/Code-Editior.png" alt="" class="sub__nested__image" />
+
+            <h3 class="sub__nested__button">
+              <a href="https://replit.com/@AryanMeghraj/Code-1#index.html">
+                Try Frontend Editor (HTML/CSS/JS)
+              </a>
+              <br>
+              <a href="https://replit.com/@AryanMeghraj/Code-1-1#main.py">
+                Try Backend Editor (Python/PHP/Java/C)
+              </a>
+            </h3>
+          </div>
+        </div>
+      </section>
+
+        <!--==================== WEBSITE COLOR PICKER ====================-->
+        <section class="website__color__picker">
+          <div class="website__color__picker__container">
+              <div class="website__color__data">
+                  <h1 class="website__color__titile">
+                      Color Picker
+                  </h1>
+                  <img src="IMG/Color-picker.png" alt="" class="website__color__picker__image">
+              </div>
+          </div>
+        </section>
+
+        <!--==================== WEBSITE TEMPLATE SECTION ====================-->
+        <section class="website__template">
+          <div class="website__template__container">
+              <div class="website__template__home__data">
+                  <h1 class="website__template__title">Web Templates</h1>
+                  <h2 class="website__template__subtitle">
+                    Browse our selection of free responsive HTML Templates
+                  </h2>
+                  <img src="IMG/W3school_website_templates.jpg" alt="" class="website__template__image">
+                
+                  <h3 class="website__template__button">
+                    <a href="https://www.w3schools.com/w3css/w3css_templates.asp">
+                      Browse Template
+                    </a>
+                  </h3>
+                </div>
+          </div>
+        </section>
+    </main>
+
+    <!--==================== PRO USER ====================-->
+    <section class="pro__user">
+        <div class="pro__user__container">
+            <div class="pro__user__data">
+                <h1 class="pro__user__title">Become a PRO User</h1>
+                <h2 class="pro__user__subtitle"> And unlock powerful features: </h2>
+                <h3 class="pro__user__sub-subtitle">
+                    <i class="ri-checkbox-circle-fill"></i> Browse W3Schools without ads <br>
+                    <i class="ri-checkbox-circle-fill"></i> Website hosting (Includes Spaces PRO) <br>
+                    <i class="ri-checkbox-circle-fill"></i> Access to our HTML Video Tutorial
+                </h3>
+                <h3 class="pro__user__button">
+                    <a href="https://www.w3schools.com/pro/index.php">
+                      Learn More
+                    </a>
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <h3 class="footer__logo">
+            <img src="IMG/W3school-logo.png" alt=""/>
+          </h3>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">TOP TUTORIAL</h3>
+          <ul class="footer__link">
+            <li>
+              <a href="" class="footer__link"> HTML Tutorial </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> CSS Tutorial </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> JavaScript Tutorial </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> How To Tutorial </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> SQL Tutorial </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Python Tutorial </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> W3.CSS Tutorial </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Bootstrap Tutorial </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> PHP Tutorial </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Java Tutorial </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> C++ Tutorial </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Jquery Tutorial </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__titile">TOP REFERENCES</h3>
+          <ul class="footer__link">
+            <li>
+              <a href="" class="footer__link"> HTML Reference </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> CSS Reference </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> JavaScript Reference </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> How To Reference </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> SQL Reference </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Python Reference </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> W3.CSS Reference </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Bootstrap Reference </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> PHP Reference </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Java Reference </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> C++ Reference </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Jquery Reference </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">TOP EXAMPLES</h3>
+          <ul class="footer__link">
+            <li>
+              <a href="" class="footer__link"> HTML Example </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> CSS Example </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> JavaScript Example </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> How To Example </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> SQL Example </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Python Example </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> W3.CSS Example </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Bootstrap Example </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> PHP Example </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Java Example </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> C++ Example </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Jquery Example </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">GET CERTIFIED</h3>
+          <ul class="footer__link">
+            <li>
+              <a href="" class="footer__link"> HTML Certificate </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> CSS Certificate </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> JavaScript Certificate </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> How To Certificate </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> SQL Certificate </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Python Certificate </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> W3.CSS Certificate </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Bootstrap Certificate </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> PHP Certificate </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Java Certificate </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> C++ Certificate </a>
+            </li>
+            <li>
+              <a href="" class="footer__link"> Jquery Certificate </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">
+            Follow Us
+          </h3>
+          <ul class="footer__social">
+            <a href="https://www.facebook.com/w3schoolscom/" target="_blank" class="footer__social-link">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/w3schools.com_official/" target="_blank" class="footer__social-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/w3schools.com/" target="_blank" class="footer__social-link">
+              <i class="ri-linkedin-line"></i>
+            </a>
+            <a href="https://discord.com/invite/6Z7UaRbUQM" class="footer__social-link">
+              <i class="ri-discord-line"></i>
+            </a>
+            <a href="https://w3schools.invisionzone.com/" class="footer__social-link">
+              Forum
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="footter__copy">
+        sCopyright 1999-2023 by Refsnes Data. All Rights Reserved. W3Schools is
+        Powered by W3.CSS.
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="Index.html" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="Assets/JS/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="Assets/JS/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP JS ===============-->
+    <script src="Assets/JS/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS LINK ===============-->
+    <script src="JS/Main.js"></script>
+  </body>
+</html>
