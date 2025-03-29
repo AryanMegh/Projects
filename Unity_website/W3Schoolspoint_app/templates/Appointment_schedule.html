@@ -1,0 +1,127 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----------------------------------------------------------------------------------------------- WEBSITE LOGO --------------------------------------------------->
+    <link rel="shortcut-icon" href="{% static 'Resources/IMG/Logo.png' %}" />
+
+    <!----------------------------------------------------------------------------------------------- CSS STYLE LINK --------------------------------------------------->
+    <link rel="stylesheet" href="{% static 'Resources/CSS/Appointmentsection_style.css' %}" />
+
+    <!----------------------------------------------------------------------------------------------- ICON LINK --------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!----------------------------------------------------------------------------------------------- WEBSITE TITLE --------------------------------------------------->
+    <title> Unity website </title>
+</head>
+<body>
+    <!----------------------------------------------------------------------------------------------- HEADER --------------------------------------------------->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="Index" class="nav__logo">
+                <i class="ri-meta-fill"></i> Unity
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#specialist_doctor" class="nav__link">Specialist doctor</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#doctor" class="nav__link">Doctors</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#gallery" class="nav__link">Gallery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#service" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Logout" class="nav__link">Logout</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <!--TOGGLE BUTTON-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!----------------------------------------------------------------------------------------------- APPOINTMENT SCHEDULING SECTION --------------------------------------------------->
+    <section class="form">
+            <div class="form__data">
+                <h1 class="form__title"> Book appointment </h1>
+            </div>
+            
+            <div class="form__container">
+                <form action="" method="post" class="Appointment_Form">
+                    {% csrf_token %}
+                    
+                    <label for="Name">Full-name:</label>
+                    <input type="text" placeholder="Full-name" name="Full_name" id="Full_name">
+    
+                    <label for="Email">Email:</label>
+                    <input type="email" placeholder="Email" name="Email" id="Email">
+
+                    <label for="Appointment-purpose">Appointment-purpose:</label>
+                    <input type="text" placeholder="Appoinmtner-purpose" name="Appointment_purpose" id="Appoinmtnet_purpose">
+
+                    <label for="Mobile-number">Mobile Number:</label>
+                    <input type="text" placeholder="Phone-number" name="Phone_number" id="Phone_number">
+
+                    <label for="Appoinmtner-department">Appointment-department:</label>
+                    <select name="Appoint_department" id="Appoint_department">
+                        <option value="Health_checkup">Health Checkup</option>
+                        <option value="Dermotology">Dermotology</option>
+                        <option value="Endorcrinology and Diabetes">Endocrinology and Diabetes</option>
+                        <option value="Dentist">Dentist</option>
+                        <option value="Cancer-treatment">Cancer treatment</option>
+                        <option value="Breast-surgery">Breast-surgery</option>
+                        <option value="Bariatic-surgery">Bariatic-surgery</option>
+                        <option value="Eye-checkup">Eye-checkup</option>
+                    </select>
+
+                    <label for="Appointment-Date">Appointment-date</label>
+                    <input type="date" placeholder="Select date" name="Appoint_date" id="Appoint_date">
+
+                    <label for="Appointment-Time">Appointment-Time:</label>
+                    <select name="Appoint_time" id="Appoint_time">
+                        <option value="Select-time">Select time</option>
+                        <option value="8 AM -10 AM">8 AM -10 AM</option>
+                        <option value="10 AM - 12 AM">10 AM - 12 AM</option>
+                        <option value="12 AM - 2 PM">12 AM - 2 PM</option>
+                        <option value="2 AM - 4 PM">2 AM - 4 PM</option>
+                        <option value="4 AM - 6 PM">4 AM - 6 PM</option>
+                        <option value="6 AM - 8 PM">6 AM - 8 PM</option>
+                        <option value="8 AM - 10 PM">8 AM - 10 PM</option>
+                        <option value="10 AM - 12 PM">10 AM - 12 PM</option>
+                    </select>
+
+                    <button id="LogIn_btn" type="submit" class="LogIn_button">
+                            <a href="#">Submit</a>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    <!----------------------------------------------------------------------------------------------- MAIN JS SCRIPT LINK --------------------------------------------------->
+    <script src="{% static 'Resources/JS/Main.js' %}"></script>
+</body>
+</html> 

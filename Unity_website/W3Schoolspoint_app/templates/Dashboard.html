@@ -1,0 +1,507 @@
+﻿{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----------------------------------------------------------------------------------------------- WEBSITE LOGO --------------------------------------------------->
+    <link rel="icon" href="{% static 'Resources/IMG/Logo.png' %}" />
+
+    <!----------------------------------------------------------------------------------------------- CSS STYLE LINK --------------------------------------------------->
+    <link rel="stylesheet" href="{% static 'Resources/CSS/Style.css' %}" />
+
+    <!----------------------------------------------------------------------------------------------- ICON LINK --------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!----------------------------------------------------------------------------------------------- WEBSITE TITLE --------------------------------------------------->
+    <title> Unity website </title>
+</head>
+<body>
+    <!----------------------------------------------------------------------------------------------- HEADER --------------------------------------------------->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="Index" class="nav__logo">
+                <i class="ri-bluesky-fill"></i> Unity
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#specialist_doctor" class="nav__link">Specialist doctor</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#doctor" class="nav__link">Doctors</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#gallery" class="nav__link">Gallery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#service" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Logout" class="nav__link">Logout</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <!--TOGGLE BUTTON-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <br /><br /><br />
+
+    <!----------------------------------------------------------------------------------------------- MAIN SECTION --------------------------------------------------->
+    <main class="main">
+        <!----------------------------------------------------------------------------------------------- HOME PAGE SECTION --------------------------------------------------->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Making a big difference with a life care
+                    </h1>
+                    <h2 class="home__subtitle">
+                        Providing comprehensive care to patients
+                        <br />
+                        Everyone deserves to have their medical needs met end-to-end. With this in mind, Jupiter Hospital has Asia’s Finest Neuro Rehabilitation Centre in Thane, as well as a centre in Indore, to care for individuals who require extensive care to recover from injuries of various kinds.
+                    </h2>
+
+                    <br /><br />
+
+                    <img src="{% static 'Resources/IMG/Hospital_img.jpg' %}" class="home__img" />
+
+                    <h1 class="home__title">
+                        Providing comprehensive care to patients
+                    </h1>
+                    <h2 class="home__subtitle">
+                        Everyone deserves to have their medical needs met end-to-end. With this in mind, Jupiter Hospital has Asia’s Finest Neuro Rehabilitation Centre in Thane, as well as a centre in Indore, to care for individuals who require extensive care to recover from injuries of various kinds.
+                    </h2>
+
+                    <img src="{% static 'Resources/IMG/Hospital_img2.jpg' %}" class="home__img" />
+                </div>
+            </div>
+        </section>
+
+        <!----------------------------------------------------------------------------------------------- SPECIALIST DOCTOR SECTION --------------------------------------------------->
+        <section class="specialist_doctor section" id="specialist_doctor">
+            <div class="sepecialistdoctor__container container grid">
+                <div class="specialistdoctor__data">
+                    <h1 class="specialistdoctor__title">Specialities</h1>
+                </div>
+                <table>
+                    <td>
+                        <article class="specialistdoctor__card">
+                            <h1 class="specialist_doctorcard__title">
+                                Bariatic surgery
+                            </h1>
+                            <p class="specialist_doctorcard__description">
+                                If you are seeking bariatric surgery treatment in Thane,
+                                <br />
+                                choose Unity Hospital as your trusted destination.
+                                <a href="Bariaticsurgery_description">Know more</a>
+                            </p>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="specialistdoctor__card">
+                            <h1 class="specialist_doctorcard__title">
+                                Breast center care
+                            </h1>
+                            <p class="specialist_doctorcard__description">
+                                If you are seeking breast treatment in Thane,
+                                <br />
+                                choose Unity Hospital as your trusted destination.
+                                <a href="Breastcenter_description">Know more</a>
+                            </p>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="specialistdoctor__card">
+                            <h1 class="specialistdoctor__title">Cancer</h1>
+                            <p class="specialist_doctorcard__description">
+                                If you are seeking cancer treatment in Thane,
+                                <br />
+                                choose Unity Hospital as your trusted destination.
+                                <a href="Cancer_description">Know more</a>
+                            </p>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="specialistdoctor__card">
+                            <h1 class="specialistdoctor__title">Chest Medicine</h1>
+                            <p class="specialist_doctorcard__description">
+                                If you are seeking chest medicin treatment in Thane,
+                                <br />
+                                choose Unity Hospital as your trusted destination.
+                                <a href="Chest_description">Know more</a>
+                            </p>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="specialistdoctor__card">
+                            <h1 class="specialistdoctor__title">Dermotology</h1>
+                            <p class="specialist_doctorcard__description">
+                                If you are seeking dermotology treatment in Thane,
+                                <br />
+                                choose Unity Hospital as your trusted destination.
+                                <a href="Dermotology_description">Know more</a>
+                            </p>
+                        </article>
+                    </td>
+                    <td>
+                        </article>
+                        <article class="specialistdoctor__card">
+                            <h1 class="specialistdoctor__title">Dental care</h1>
+                            <p class="specialist_doctorcard__description">
+                                If you are seeking dental treatment in Thane,
+                                <br />
+                                choose Unity Hospital as your trusted destination.
+                                <a href="Dentist_description">Know more</a>
+                            </p>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="specialistdoctor__card">
+                            <h1 class="specialistdoctor__title">Ent</h1>
+                            <p class="specialist_doctorcard__description">
+                                Are you looking for an Ear <br /> hospital in
+                                <br />Thane that specialises in the diagnosis and treatment of hormonal disorders?
+                                <a href="Ent_description">Know more</a>
+                            </p>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="specialistdoctor__card">
+                            <h1 class="specialistdoctor__title">Endnocrinology and Diabetes</h1>
+                            <p class="specialist_doctorcard__description">
+                                Are you looking for an Endocrinology and diabetes care center <br /> hospital in
+                                <br />Thane that specialises in the diagnosis
+                                <br />and treatment of hormonal disorders?
+                                <a href="Endocrinologyanddiabetes_description">Know more</a>
+                            </p>
+                        </article>
+                    </td>
+                </table>
+            </div>
+        </section>
+
+        <!----------------------------------------------------------------------------------------------- BLOG PAGE SECTION --------------------------------------------------->
+        <section class="blog section" id="blog">
+            <div class="blog__container container grid">
+                <div class="blog__data">
+                    <h1 class="blog__title">
+                        Knowledge Center
+                    </h1>
+                    <div class="blog__subtitle">
+                        Latest blogs
+                        <br />
+                        A Guide to Understanding Some Common Congenital Heart Problems                                                                                                                                                                                                                                                                                                                                                                                                                                      Apr 13, 2023
+                        <br />
+                        <br />
+                        Congenital heart problems refer to a wide gamut of structural heart defects and malformations that are present since birth. The heart of a baby is formed in the first 8 weeks post conception.
+                        However, in some cases, it does not develop completely, leading to structural malformations.
+                        As per the leading child heart specialist in Thane, the birth prevalence of congenital heart diseases in India is about 9 in 1000 which suggests that nearly 2,00,000 children are born with such defect in India, annually. Most of these are usually detected before birth however, those which go undetected initially may be detected later, at the time of birth.
+                        Here are 4 common congenital heart problems, as listed by the best cardiologist in Thane.
+                        <br />·   Aortic stenosis- Aortic valve stenosis is a condition marked by a severe obstruction in the aortic valve which prevents the free flow of blood through it. The condition can be congenital or may be developed later in life, owing to unhealthy lifestyle practices. As far as congenital aortic valve stenosis is concerned, the condition primarily develops during the first 8 weeks post conception. The aortic valve is one of the four major valves of the heart, responsible for the flow of oxygenated blood from the left ventricle to the different parts of the body. This flow of blood is regulated by the opening and closing of the aortic flaps. However, in babies with aortic valve stenosis, the valve is very narrow and the flaps are usually fused together. Owing to this, the oxygen-rich blood is not able to reach the body
+                        <br />·   Ventricular septal defect- A ventricular septal defect refers to a hole or perforation in the wall or septum, separating the lower chambers of the heart, i.e. the ventricles. Usually, the children with the ventricular septal defect are asymptomatic, which means that they do not experience any of the symptoms. One of the major symptoms of ventricular septal defect is heart murmur, which can be clearly heard while using a stethoscope. Larger the size of the hole, greater the risks of congestive heart failure, which can result from the backward flow of blood to the lungs. Children with large ventricular septal defects are likely to have an elevated heart rate and are usually underweight. Treatment for the ventricular septal defect is offered at the leading cardiology hospital in Thane
+                        <br />·   Atrial septal defect- An atrial septal defect refers to a hole in the septum separating the atria i.e. the upper chambers of the heart. An atrial septal defect can be of 4 different types depending upon the location of the hole. In most of the cases, the child is asymptomatic however some children show symptoms like breathlessness, fatigue and cold sweats. While the smaller holes close on their own with time, larger ones might require a surgical repair. This can be done using interventional cardiac catheterization.
+                        <br />·   Pulmonary valve stenosis- Just like the aortic valve stenosis refers to an obstruction in the aortic valve, pulmonary valve stenosis refers to a severe blockage in the pulmonary valve, which is one of the 4 major valves of the heart. Children with pulmonary valve stenosis either have narrowed pulmonary valve or their flaps are fused together, both of which hinder the free flow of blood. The condition is likely to produce heart murmur, an additional sound of the heart, apart from the regular beats. If the problem progresses, it can lead to increased pressure on the right side of the heart, as a result of which the ventricular muscle becomes thick. Treatment for the same is offered at some of the leading hospitals in India, including Unity Hospital.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------------------------------------------------------------------------------------------- ABOUT PAGE SECTION --------------------------------------------------->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h1 class="about__title">About Us</h1>
+                    <iframe src="https://player.vimeo.com/video/33787650" class="about__video"></iframe>
+                    <p class="about__description">
+                        UNITY Hospital is a multi/super speciality hospital located at the prime location of Vaishnodevi Circle, SG Road, Ahmedabad; with state-of-the-art facilities & treatments at an affordable cost, encompassing wide spectrum of accurate diagnostics and elegant therapeutics created on the philosophical edifice of patient and ethical centricity ensuring humanistic dispensation.
+                        <br />
+                        Multiple Options For Treatment.
+                        <br />Full Of Latest Technologies and Equipments.
+                        <br />Best Hospital Of 2020 Award Winner.
+                        <br />24/7 Ambulance Support.
+                        <br />Eminent and Experienced Doctors.
+
+                        <br />Vision: Ensuring ‘well being’ as a humane commitment to enliven humanity.
+
+                        <br />Mission: The ‘well being’ ensured by extension of Available, Accessible, Affordable, Safe, Efficacious, Professional and Ethical.
+
+                        <br />Core Values: Team Work, Integrity, Responsibility and Ethics.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <!----------------------------------------------------------------------------------------------- DOCTOR PAGE SECTION --------------------------------------------------->
+        <section class="doctor section" id="doctor">
+            <div class="doctor__container container grid">
+                <div class="doctor__data">
+                    <h1 class="doctor__title">Doctors</h1>
+                </div>
+                <div class="doctorcard__container">
+                    <div class="doctorcard__item">
+                        <table>
+                            <td>
+                                <div class="card__body">
+                                    <h1 class="card__title">
+                                        <img src="{% static 'Resources/IMG/Team/1.jpg' %}" />
+                                        DR HARSHIL PATEL
+                                    </h1>
+                                    <p class="card__description">
+                                        Child nurse
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card__body">
+                                    <h1 class="card__title">
+                                        <img src="{% static 'Resources/IMG/Team/2.jpg' %}" />
+                                        DR SAHIL ACHHAVA
+                                    </h1>
+                                    <p class="card__description">
+                                        Neurology
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card__body">
+                                    <h1 class="card__title">
+                                        <img src="{% static 'Resources/IMG/Team/3.jpg' %}" />
+                                        DR DHRUV SHAH
+                                    </h1>
+                                    <p class="card__description">
+                                        General surgery
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card__body">
+                                    <h1 class="card__title">
+                                        <img src="{% static 'Resources/IMG/Team/4.jpg' %}" />
+                                        DR VIJETA KUMARI
+                                    </h1>
+                                    <p class="card__description">
+                                        Health Checkup
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card__body">
+                                    <h1 class="card__title">
+                                        <img src="{% static 'Resources/IMG/Team/5.jpg' %}" />
+                                        DR YAGNESH PATEL
+                                    </h1>
+                                    <p class="card__description">
+                                        Dermotology
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card__body">
+                                    <h1 class="card__title">
+                                        <img src="{% static 'Resources/IMG/Team/6.jpg' %}" />
+                                        DR JEEL PATEL
+                                    </h1>
+                                    <p class="card__description">
+                                        Eye Specialist
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card__body">
+                                    <h1 class="card__title">
+                                        <img src="{% static 'Resources/IMG/Team/7.jpg' %}" />
+                                        DR JEEL PATEL
+                                    </h1>
+                                    <p class="card__description">
+                                        Health Checkup
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card__body">
+                                    <h1 class="card__title">
+                                        <img src="{% static 'Resources/IMG/Team/8.jpg' %}" />
+                                        DR VIJETA KUMARI
+                                    </h1>
+                                    <p class="card__description">
+                                        ICC & CCU
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card__body">
+                                    <h1 class="card__title">
+                                        <img src="{% static 'Resources/IMG/Team/9.jpg' %}" />
+                                        DR HARMAN
+                                    </h1>
+                                    <p class="card__description">
+                                        Health Checkup
+                                    </p>
+                                </div>
+                            </td>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------------------------------------------------------------------------------------------- GALLERY SECTION --------------------------------------------------->
+        <section class="gallery section" id="gallery">
+            <section class="gallery__container container-grid">
+                <div class="gallery__data">
+                    <h1 class="gallery__title">Gallery</h1>
+                    <br />
+                </div>
+                <table>
+                    <td>
+                        <img src="{% static 'Resources/IMG/Gallery/Room.jpg' %}" class="gallery__img" />
+                        <p class="gallery__description">Room for patient</p>
+                    </td>
+                    <td>
+                        <img src="{% static 'Resources/IMG/Gallery/Parking.jpg' %}" class="gallery__img" />
+                        <p class="gallery__description">Parking</p>
+                    </td>
+                    <td>
+                        <img src="{% static 'Resources/IMG/Gallery/Opd2.jpg' %}" class="gallery__img" />
+                        <p class="gallery__description">OPD Area</p>
+                    </td>
+                    <td>
+                        <img src="{% static 'Resources/IMG/Gallery/Cath_lab.jpg' %}" class="gallery__img" />
+                        <p class="gallery__description">Cath Lab</p>
+                    </td>
+                    <td>
+                        <img src="{% static 'Resources/IMG/Gallery/Reception.jpg' %}" class="gallery__img" />
+                        <p class="gallery__description">Reception</p>
+                    </td>
+                    <td>
+                        <img src="{% static 'Resources/IMG/Gallery/Platinum_wing.jpg' %}" class="gallery__img" />
+                        <p class="gallery__description">Platinum Wing</p>
+                    </td>
+                </table>
+            </section>
+        </section>
+
+        <!----------------------------------------------------------------------------------------------- SERVICE SECTION --------------------------------------------------->
+        <section class="service section" id="service">
+            <div class="service__container container grid">
+                <div class="service__title">Services</div>
+            </div>
+            <div class="servicecard__container">
+                <table class="servicecard__table">
+                    <td>
+                        <a href="Appointment_schedulling">Appointment Scheduling</a>
+                    </td>
+                    <td>
+                        <a href="Billing_insurance_section">Billing & Insurance</a>
+                    </td>
+                    <td>
+                        <a href=""Pharmacy_inventory_section">Pharmacy & Inventory Management</a>
+                    </td>
+                    <td>
+                        <a href=""Consultation_treatment_section">Consultation & Treatment</a>
+                    </td>
+                    <td>
+                        <a href="Billing_section">Bill & Payments</a>
+                    </td>
+                    <td>
+                        <a href="Discharge_followup_section">Discharge & Follow-up</a>
+                    </td>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!----------------------------------------------------------------------------------------------- FOOTER SECTION --------------------------------------------------->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="nav__logo">
+                    <i class="ri-meta-fill"></i> Unity
+                </a>
+                <p class="footer__description">
+                    At Unity Hospital, we are convinced that 'quality' and 'lowest cost' <br />
+                    are not mutually exclusive when it comes to healthcare delivery. <br />
+                    Our mission is to deliver high quality, affordable  <br />
+                    healthcare services to the broader population in India.
+                </p>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Contact Us
+                </h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Unity Hospital</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Thane In</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Phone 888 107 00555</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Email: unityhosiptal@gmaeil.com</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Follow Us
+                </h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aryan-meghraj-shivgunde-615b90305/" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+            <span class="footer__copy">
+                &#169; 2019 © All Rights Reserved. 
+                <br> 
+                All rigths reserved 
+                <br>
+                <a href="Terms">Terms of service</a>
+            </span>
+        </div>
+    </footer>
+
+    <!----------------------------------------------------------------------------------------------- SCROLL-UP SECTION --------------------------------------------------->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!----------------------------------------------------------------------------------------------- MAIN JS SCRIPT LINK --------------------------------------------------->
+    <script src="{% static 'Resources/JS/Main.js' %}"></script>
+</body>
+</html>

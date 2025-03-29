@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewBag.Title = "Breastcenter_description";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----------------------------------------------------------------------------------------------- CSS STYLE LINK --------------------------------------------------->
+    <link rel="stylesheet" href="../Resources/CSS/Style.css" />
+
+    <!----------------------------------------------------------------------------------------------- ICON LINK --------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!----------------------------------------------------------------------------------------------- WEBSITE TITLE --------------------------------------------------->
+    <title> Unity website </title>
+</head>
+<body>
+    <!----------------------------------------------------------------------------------------------- HEADER --------------------------------------------------->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="@Url.Action("Index","Home")" class="nav__logo">
+                <i class="ri-meta-fill"></i> Unity
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#specialist_doctor" class="nav__link">Specialist doctor</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact-us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#doctor" class="nav__link">Doctors</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#gallery" class="nav__link">Gallery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="@Url.Action("Service","Home")" class="nav__link">Service</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="@Url.Action("Login","Home")" class="nav__link">Logout</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <!--TOGGLE BUTTON-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <br /><br /><br />
+
+    <!----------------------------------------------------------------------------------------------- MAIN SECTION --------------------------------------------------->
+    <main class="main">
+        <!----------------------------------------------------------------------------------------------- HOME PAGE SECTION --------------------------------------------------->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Comprehensive Breast Care: Your Path to Early Detection, Treatment, and Wellness
+                    </h1>
+                    <div class="home__subtitle">
+                        At Jupiter’s breast cancer surgery hospital in Thane, we are committed to providing you with a dedicated, all-women's team of experts who specialize in addressing breast-related concerns. Our mission is to deliver the highest quality breast cancer care, benign breast problem treatments, cosmetic breast procedures, and comprehensive preventive breast health services.
+                        <br />
+                        We understand that your breast health is a vital component of your overall well-being, and our compassionate team is here to support you every step of the way. With a focus on patient-centric care, we strive to empower you with knowledge and personalized solutions, ensuring that your breast health journey is marked by comfort, confidence, and the best possible outcomes. At Jupiter Hospital, you will find the best breast cancer surgery treatment in Thane.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!----------------------------------------------------------------------------------------------- FOOTER SECTION --------------------------------------------------->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="nav__logo">
+                    Unity
+                </a>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Follow Us
+                </h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        Forum
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!----------------------------------------------------------------------------------------------- SCROLL-UP SECTION --------------------------------------------------->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!----------------------------------------------------------------------------------------------- MAIN JS SCRIPT LINK --------------------------------------------------->
+    <script src="Assets/JS/Main.js"></script>
+</body>
+</html>

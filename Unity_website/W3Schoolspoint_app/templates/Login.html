@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--***************************************** WEBSITE LOGO ***********************************-->
+            <link rel="stylesheet" href="{% static 'Resources/IMG/Logo.png' %}">
+
+            <!--***************************************** WEBSITE TITLE ***********************************-->
+            <title>W3Schoolspoint</title>
+
+            <!--***************************************** WEBSITE CSS STYLE LINK ***********************************-->
+            <link rel="stylesheet" href="{% static 'Resources/CSS/Formpage_style.css' %}">
+        </head>
+        <body>
+            <section class="form">
+                <div class="form__data">
+                    <h1 class="form__title"> Login </h1>
+                </div>
+                
+                <div class="form__container">
+                    <form action="" method="post" class="LogIn_Form">
+                        {% csrf_token %}
+                        
+                        <label for="User_name">User-name:</label>
+                        <input type="text" placeholder="User-name" name="User_name" id="User_name">
+        
+                        <br><br>
+        
+                        <label for="Password">Password:</label>
+                        <input type="text" placeholder="Password" name="Password" id="Password">
+                        
+                        <br><br>
+
+                        <label for="Forgot_password">
+                            <a href="Forgot_password">Forgot Password?</a>
+                        </label>
+
+                        
+                        <button id="LogIn_btn" type="submit" class="LogIn_button">
+                            <a href="Dashboard">Login</a>
+                        </button>
+        
+                        <br><br>
+
+                        <div class="form_footer">
+                            <p> 
+                                Don't have an account? 
+                                <a href="Signup.html">Sign Up</a> 
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </body>
+    </html>

@@ -1,0 +1,114 @@
+﻿{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----------------------------------------------------------------------------------------------- CSS STYLE LINK --------------------------------------------------->
+    <link rel="stylesheet" href="{% static 'Resources/CSS/Style.css' %}" />
+
+    <!----------------------------------------------------------------------------------------------- ICON LINK --------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!----------------------------------------------------------------------------------------------- WEBSITE TITLE --------------------------------------------------->
+    <title> Unity website </title>
+</head>
+<body>
+    <!----------------------------------------------------------------------------------------------- HEADER --------------------------------------------------->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="Dashboard" class="nav__logo">
+                W3Schoolspoint
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="feature" class="nav__link">Feature</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="specialist_doctor" class="nav__link">Specialist doctor</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Login.cshtml" class="nav__link">Logout</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <!--TOGGLE BUTTON-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <br />
+
+    <main class="man">
+        <section class="uriology section">
+            <div class="uriology__container">
+                <div class="uriology__data">
+                    <h1 class="uriology__title">
+                        Precision Care for Men's Urinary and Reproductive Health Health: Urology Expertise at Unity Hospital
+                    </h1>
+                    <h2 class="uriology__subtitle">
+                        Welcome to our comprehensive facility, a leading urology hospital in Thane, equipped with advanced technologies to ensure the highest quality outcomes for our patients. Our diverse range of advanced treatment modalities includes non-invasive and minimally invasive options, catering to the effective management of urinary system diseases.
+                        <br /> Our distinguished team of highly experienced experts ,includes urologists, andrologists, oncologists, nephrologists, and transplant surgeons. With a commitment to excellence, they adopt a multidisciplinary approach that aligns with international standards, ensuring the delivery of top-notch services. Collaborating seamlessly with various departments such as Anaesthesia, Pathology, Cardiology, Radiology, Immunology, and Interventional Radiology, our center promotes excellent interdepartmental cooperation.
+                        <br /> For both adult and pediatric urology, we offer round-the-clock inpatient and outpatient medical and surgical care. As a leading name in urology treatment in Thane, our center focuses on providing screening, staging, and the most up-to-date treatments for the effective management of urological conditions. Trust us for unparalleled services that prioritize your well-being and adhere to the highest standards of care.
+                    </h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!----------------------------------------------------------------------------------------------- FOOTER SECTION --------------------------------------------------->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="nav__logo">
+                    Unity
+                </a>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Follow Us
+                </h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        Forum
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!----------------------------------------------------------------------------------------------- SCROLL-UP SECTION --------------------------------------------------->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!----------------------------------------------------------------------------------------------- MAIN JS SCRIPT LINK --------------------------------------------------->
+    <script src="Assets/JS/Main.js"></script>
+</body>
+</html>

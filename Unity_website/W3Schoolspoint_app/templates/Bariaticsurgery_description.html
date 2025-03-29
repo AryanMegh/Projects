@@ -1,0 +1,129 @@
+﻿{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----------------------------------------------------------------------------------------------- CSS STYLE LINK --------------------------------------------------->
+    <link rel="stylesheet" href="{% static 'Resources/CSS/Style.css' %}" />
+
+    <!----------------------------------------------------------------------------------------------- ICON LINK --------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!----------------------------------------------------------------------------------------------- WEBSITE TITLE --------------------------------------------------->
+    <title> Unity website </title>
+</head>
+<body>
+    <!----------------------------------------------------------------------------------------------- HEADER --------------------------------------------------->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="Index" class="nav__logo">
+                <i class="ri-meta-fill"></i> Unity
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="Dashboard" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Specialist_doctor" class="nav__link">Specialist doctor</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Blog" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="About" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Contact" class="nav__link">Contact-us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Doctor" class="nav__link">Doctors</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Gallery" class="nav__link">Gallery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Service" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Logout" class="nav__link">Logout</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <!--TOGGLE BUTTON-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <br />
+
+    <main class="man">
+        <section class="bariatic_surgery section">
+            <div class="bariaticsurgery__container">
+                <div class="bariaticsurgery__data">
+                    <h1 class="bariaticsurgery__title">
+                        Expert Solutions for Severe Obesity: Your Path to a Healthier and Happier Future
+                    </h1>
+                    <h2 class="bariaticsurgery__subtitle">
+                        If you are seeking bariatric surgery treatment in Thane, choose Jupiter Hospital as your trusted destination. We're committed to providing dedicated care, from diagnosis to post-operative support, to ensure your weight-loss journey is safe and successful. Our team of renowned specialists and professionals collaborates closely to offer you the most effective treatments.
+
+                        <br />
+                        Our Comprehensive Approach:
+                        <br />
+                        As a trusted Bariatric Surgery Hospital in Thane, we take a comprehensive approach to ensure the best outcomes for our patients. Our team includes experienced surgeons, gastroenterologists, anesthesiologists, technicians, counsellors, and dietitians who have garnered recognition both nationally and internationally. Together, they collaborate to create personalised treatment plans for patients that incorporate effective surgical techniques and post-surgery recovery options.
+                    </h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!----------------------------------------------------------------------------------------------- FOOTER SECTION --------------------------------------------------->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="nav__logo">
+                    Unity
+                </a>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Follow Us
+                </h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social-link">
+                        Forum
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!----------------------------------------------------------------------------------------------- SCROLL-UP SECTION --------------------------------------------------->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!----------------------------------------------------------------------------------------------- MAIN JS SCRIPT LINK --------------------------------------------------->
+    <script src="Assets/JS/Main.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿{% static load %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----------------------------------------------------------------------------------------------- WEBSITE LOGO --------------------------------------------------->
+    <link rel="shortcut-icon" href="{% static 'Resources/IMG/Logo.png' %}" />
+
+    <!----------------------------------------------------------------------------------------------- CSS STYLE LINK --------------------------------------------------->
+    <link rel="stylesheet" href="{% static 'Resources/CSS/Style.css' %}" />
+
+    <!----------------------------------------------------------------------------------------------- ICON LINK --------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!----------------------------------------------------------------------------------------------- WEBSITE TITLE --------------------------------------------------->
+    <title> Unity website </title>
+</head>
+<body>
+    <!----------------------------------------------------------------------------------------------- HEADER --------------------------------------------------->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="Index" class="nav__logo">
+                <i class="ri-meta-fill"></i> Unity
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="Index" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Specialist_doctor" class="nav__link">Specialist doctor</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Blog" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="About" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Contact" class="nav__link">Contact-us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Doctor" class="nav__link">Doctors</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Gallery" class="nav__link">Gallery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Service" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Logout" class="nav__link">Logout</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <!--TOGGLE BUTTON-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
